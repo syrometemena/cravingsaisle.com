@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Poppins:wght@100;300;400;500;600&display=swap');
 
 :root {
     --brown:#642e00;
@@ -45,7 +45,7 @@ html {
 }
 
 section {
-    padding:3rem 9%;
+    padding:3rem 5%;
 }
 
 .heading {
@@ -96,14 +96,14 @@ section {
     display:flex;
     align-items: center;
     justify-content: space-between;
-    padding:2rem 9%;
+    padding:1rem 10%;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
 }
 
 .header .logo img {
     width: 80px; 
     height: auto;
-    margin-left: -30px;
+    margin-left: -60px;
 }
 
 .header .navbar a {
@@ -347,7 +347,7 @@ section {
 
 .products .box-container .box .icons a:hover{
     background: var(--brown);
-    color:#ac7c4c;
+    color:#fbd2a4;
 }
 
   .products .box-container .box .img {
@@ -396,12 +396,26 @@ section {
 .about .img img{
     width: 100%;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
-    border:0.1rem solid rgba(0,0,0,0.7);
     border-radius: 100px;
 }
 
 .about .content{
     flex: 1 1 40rem;
+}
+
+.about .content .button {
+    padding: 10px 26px;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    background-color: #fbd2a4;
+    border-color: #642e00;
+    color: #642e00;
+    font-size: 13px;
+}
+
+.about .content .button:hover {
+    color: #fbd2a4;
+    background-color: #642e00;
 }
 
 .about .content span{
@@ -410,16 +424,18 @@ section {
 }
 
 .about .content h3{
+    font-family: 'Freeman';
     color:#222;
-    font-size: 3rem;
+    font-size: 5rem;
     padding-top:.5rem;
+    letter-spacing: 1px;
 }
 
 .about .content p{
     color:#222;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 2;
-    padding:1rem 0;
+    padding:2rem 0 3rem;
 }
 
 .gallery .box-container{
@@ -623,6 +639,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
     gap: 1.5rem;
+
 }
 
 .contact .icons-container .icons{
@@ -680,8 +697,7 @@ section {
     flex-wrap: wrap;
 }
 
-.contact .row form .inputBox .box,
-.contact .row form textarea{
+.contact .row form .inputBox .box, .contact .row form textarea{
     padding:1rem 1.2rem;
     font-size: 1.6rem;
     border: 0.1rem solid rgba(0,0,0,0.7);
@@ -706,66 +722,34 @@ section {
     min-height: 10vh;
 }
 
-.footer{
+.footer {
     background:var(--brown);
-
 }
 
-.footer .box-container{
+.footer .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap:1.5rem;
+    text-align: center;
 }
 
-.footer .box-container .box h3{
-    font-size: 2.2rem;
-    color: #fff;
+.footer .box-container .box{
+    color: #fbd2a4;
     padding:1rem 0;
+    display:inline;
 }
 
-.footer .box-container .box p{
-    font-size: 1.5rem;
-    color: #fff;
-    padding-bottom: .5rem;
-}
-
-.footer .box-container .box a{
-    font-size: 1.4rem;
-    color: #fff;
-    padding:1rem 0;
-    display:block;
-}
-
-.footer .box-container .box a:hover{
+.footer .box-container .box i:hover{
     color: #fff;
 }
 
-.footer .box-container .box a:hover i{
-    padding-right: 2rem;
-}
-
-.footer .box-container .box a i{
-    padding-right: .5rem;
-    color: #fff;
-}
-
-.footer .box-container .box form input[type="email"]{
-    width: 100%;
-    padding:1rem 1.2rem;
-    font-size: 1.6rem;
-    color: #000;
-    margin: 1rem 0;
-    text-transform: none;
-}
-
-.footer .box-container .box .payments{
-    width: 100%;
-    margin-top: 2rem;
+.footer .box-container .box i{
+    color: #fbd2a4;
+    width: 50px;
+    font-size: 25px;
 }
 
 .credit{
     text-align: center;
-    background:var(--brown);
-    color: #fff;
-    font-size:2rem;
+    background: var(--brown);
+    color: #fbd2a4;
+    font-size: 15px;
 }
